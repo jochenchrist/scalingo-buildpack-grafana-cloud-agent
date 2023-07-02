@@ -29,7 +29,7 @@ echo "Grafana agent binary installed."
 if ! [ -x "$(command -v envsubst)" ]; then
   echo "-----> Installing dependencies"
   apt update
-  apt install -y gettext
+  apt install -y gettext-base
 fi
 
 export_env_dir "$ENV_DIR"
